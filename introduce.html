@@ -8,14 +8,41 @@
 </head>
 
 <body class="intro">
-    <p class="title">
-        모티베이터를 꿈꾸는 <a onclick="show('hidden');return false;" href="#">김태희</a>는
-      </p>
-    
-      <div class="hidden">
-        2000년 2월 17일 태어났다.
+    <p>모티베이터를 꿈꾸는 김태희는</p>
+    <p class="clickable" onclick="toggleVisibility('like')">좋아한다.</p>
+    <div id="like" class="hidden">
+        <p>책방에서 책냄새 맡기를 좋아한다. 인생책은 시라토리 하루히코의 <span class="clickable" onclick="toggleVisibility('book')">“기꺼이 나로 살아갈 것.”</span></p>
+        <div id="book" class="hidden">
+            <p>‘미리 상상하지 말고 사실과 마주하라’가 인생 구절이다.</p>
+        </div>
     </div>
-
+    
+    <p class="clickable" onclick="toggleVisibility('move')">활동한다.</p>
+    <div id="move" class="hidden">
+        <p>이화여자대학교 융합콘텐츠학과를 심화전공했다. UX 기획 및 디자인 트랙을 밟으며 <span class="clickable" onclick="toggleVisibility('ux')">“UX/UI 디자이너”</span>의 꿈을 키워가고 있다. <span class="clickable" onclick="toggleVisibility('previous')">“이전으로”</span></p>
+        <div id="ux" class="hidden">
+            <p>2023년 3월, IT 벤처 창업동아리 SOPT 32기 디자인 파트를 수료하고, 최적의 회의시간 도출 서비스 ASAP의 리드 UX 디자이너로 활동하고 있다. 2024년 상반기부터 SOPT makers 4기 Playground팀 프로덕트 디자이너로 활약 중이다. 2023년 7월부터 2024년 7월까지, 이화여자대학교 교내 유일 UX 디자인 학회 UXO 2기 학회원, 3기 회장으로 활동하며 Data-Driven UX를 공부했다. 비주얼 애널리틱스 툴 Beusable과의 산학협력을 진행하였다.</p>
+        </div>
+        <div id="previous" class="hidden">
+            <p>고등학교 재학 시절인 2015년 스릴러 장르 단편영화 ‘괴담’을 시작으로, 2019년 단편영화 ‘MY PACE’로 처음 시나리오를 쓰고, 감독으로 활동했다. 제7회 인천독립영화제 자원 활동 영사팀, 문화체육관광부와 인천광역시 주관 2020 부평구 공공미술 프로젝트 <부평미술로, Bupyeong Projection Mapping>에 비디오 아트 작품으로 참여했다. 2022년부터 1년 2개월 간 YouTube 채널 <입시덕후> 편집 PD로 일하며 영상 편집 활동을 시작했다. 한국기술대학교 E-Learing 강의, 스파르타코딩클럽 온라인 강좌 등 여러 영상 편집 외주 작업을 해왔으며, 마더텅 동영상팀을 거쳐 현재 에듀윌 학원 촬영/편집 PD로 일하고 있다.</p>
+        </div>
+    </div>
+    
+    <p class="clickable" onclick="toggleVisibility('love')">사랑한다.</p>
+    <div id="love" class="hidden">
+        <p><span class="clickable" onclick="toggleVisibility('record')">“기록”</span>의 힘을 믿고, <span class="clickable" onclick="toggleVisibility('write')">“글”</span>을 사랑한다.</p>
+        <div id="record" class="hidden">
+            <p>중학교 2학년 때부터 약 9년 간 꿈에서 깨면, 꿈을 기억하고 싶어 메모장에 적어왔다. 그동안 2차례 루시드드림을 꿨다.</p>
+        </div>
+        <div id="write" class="hidden">
+            <p>블로그에 짧고 긴 글을 적고 있다. 살아가면서 스치는 생각들을 붙잡아 공유하는 나름의 공적 공간이며, 사적으로는 3년 전부터 매일 일기를 쓰고 있다.</p>
+        </div>
+    </div>
+    
+    <p class="clickable" onclick="toggleVisibility('live')">살아간다.</p>
+    <div id="live" class="hidden">
+        <p>나만의 이야기를 새롭고도 꾸준히 써가며, 궁극적으로는 모티베이터의 이야기가 타인의 동기가 될 날을 꿈꾸며 살아가고 있다.</p>
+    </div>
 
     <a class="back-dark" href="/index.html" target="_self">< Back</a>
 

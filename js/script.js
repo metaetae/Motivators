@@ -160,10 +160,11 @@ function deleteGuestbookEntry(entry) {
 }
 
 //introduce.html
-function show(hidden){
-
-    if (document.getElementById('hidden').style.display=="none") document.getElementById('hidden').style.display="block"; //표시하게 하기
-    
-    else document.getElementById('hidden').style.display="none"; //안보이게 하기
-    
+function toggleVisibility(id) {
+    var element = document.getElementById(id);
+    if (element.classList.contains('hidden')) {
+        element.classList.remove('hidden');
+    } else {
+        element.classList.add('hidden');
     }
+}
